@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GooglePopularityFinder", "G
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BingPopularityFinder", "BingPopularityFinder\BingPopularityFinder.csproj", "{16624289-48CA-4656-8DE8-E3AAB5B984E4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "UnitTest\UnitTest.csproj", "{F300C794-F773-4B20-BF73-387EC0E8142D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,10 @@ Global
 		{16624289-48CA-4656-8DE8-E3AAB5B984E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16624289-48CA-4656-8DE8-E3AAB5B984E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16624289-48CA-4656-8DE8-E3AAB5B984E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F300C794-F773-4B20-BF73-387EC0E8142D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F300C794-F773-4B20-BF73-387EC0E8142D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F300C794-F773-4B20-BF73-387EC0E8142D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F300C794-F773-4B20-BF73-387EC0E8142D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
