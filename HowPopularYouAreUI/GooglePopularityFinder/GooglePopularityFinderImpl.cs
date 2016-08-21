@@ -26,7 +26,7 @@ namespace GooglePopularityFinder
 
         public string GetPopularityFunderName()
         {
-            throw new NotImplementedException();
+            return "GooglePopularityFinder";
         }
     }
 }

@@ -7,7 +7,7 @@ namespace UnitTest
     [TestClass]
     public class UnitTestUtils
     {
-        [TestMethod]
+        //[TestMethod]
         public void TestMethodGetFiles()
         {
             var result = Utils.GetFiles(".", "*.dll");
@@ -15,10 +15,10 @@ namespace UnitTest
 
         }
 
-        //[TestMethod]
-        //public void TestMethodGetType()
-        //{
-        //    var result = Utils.GetType<IPopularityFinder>();
-        //}
+        [TestMethod]
+        public void TestMethodGetType()
+        {
+            var result = Utils.GetType<IPopularityFinder>();
+        }
     }
 }

@@ -66,10 +66,6 @@
       <Project>{71748e35-4d52-4531-99aa-3351382e6feb}</Project>
       <Name>GooglePopularityFinder</Name>
     </ProjectReference>
-    <ProjectReference Include="..\HowPopularYouAreUI\HowPopularYouAreUI.csproj">
-      <Project>{6105d8ea-cdfc-4ccd-9c7f-e91dd2234935}</Project>
-      <Name>HowPopularYouAreUI</Name>
-    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

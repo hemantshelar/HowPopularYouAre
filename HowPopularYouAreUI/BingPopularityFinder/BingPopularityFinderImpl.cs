@@ -26,7 +26,7 @@ namespace BingPopularityFinder
 
         public string GetPopularityFunderName()
         {
-            throw new NotImplementedException();
+            return "BingPopularityFinder";
         }
     }
 }
