@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GooglePopularityFinder
+namespace BingPopularityFinder
 {
-    public class GooglePopularityFinder : IPopularityFinder
+    public class GooglePopularityFinderImpl : IPopularityFinder
     {
         public void SetSearchTerms(string[] terms)
         {
