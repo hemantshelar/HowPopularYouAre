@@ -18,7 +18,7 @@ namespace Framework
                 var searchResult = Directory.GetFiles(path, pattern, SearchOption.AllDirectories);
                 for(int i = 0;i<searchResult.Count();i++)
                 {
-                    searchResult[i] = Path.Combine(Directory.GetCurrentDirectory(), Path.GetFileName(searchResult[i]));
+                    searchResult[i] = Path.Combine(path, Path.GetFileName(searchResult[i]));
                 }
                 result.AddRange(searchResult.ToList<string>());
             }
@@ -32,7 +32,9 @@ namespace Framework
         public static List<T> GetType<T>() where T : class 
         {
             var result = new List<T>();
-            var dllFiles = GetFiles(".", "*.dll");
+
+            string path = Path.Combine(System.AppDomain.CurrentDomain.BaseDirectory, "bin");
+            var dllFiles = GetFiles(path, "*.dll");
             foreach (var item in dllFiles)
             {
                 Assembly assembly = Assembly.LoadFile(item);

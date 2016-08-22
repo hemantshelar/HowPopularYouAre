@@ -1,0 +1,33 @@
+﻿@model HowPopularYouAreUI.Model.PopularityFinderProvidersModel
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<div class="form-group">
+    @using (Html.BeginForm("","PopularityFinder"))
+    {
+        @Html.Label("Select provider ")
+        <div class="col-md-10">
+            @Html.DropDownListFor(m => m.SelectedID, Model.Providers)
+        </div>
+        <input type="submit" value="OK"/>
+    }
+
+    @if( Model.Result == null || Model.Result.Equals(string.Empty))
+    {
+        <div>No result to show yet!</div>
+        
+    }
+    else
+    { 
+        using (Html.BeginForm())
+        {
+            <div>
+                @Model.Result
+            </div>
+        }
+    }
+</div>
+

@@ -9,6 +9,8 @@ namespace BingPopularityFinder
 {
     public class GooglePopularityFinderImpl : IPopularityFinder
     {
+        private string _clientURL = string.Empty;
+
         public void SetSearchTerms(string[] terms)
         {
             throw new NotImplementedException();
@@ -27,6 +29,12 @@ namespace BingPopularityFinder
         public string GetPopularityFunderName()
         {
             return "BingPopularityFinder";
+        }
+
+        public string ClientURL
+        {
+            get { return _clientURL; }
+            set { _clientURL = value; }
         }
     }
 }
