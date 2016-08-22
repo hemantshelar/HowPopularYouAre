@@ -8,7 +8,7 @@ namespace Framework
 {
     public interface IPopularityFinder
     {
-        string GetPopularityFunderName();
+        string GetPopularityFinderName();
         void SetSearchTerms(string[] terms);
         void SetSearchTerms(List<String> terms);
         string GetResult();
